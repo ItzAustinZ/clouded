@@ -15,10 +15,10 @@ git checkout heroku-deploy
 if [ -z $CI ]
 then
 	echo local
-	git remote add upstream git@github.com:morejust/store.git
+	git remote add upstream git@github.com:ItzAustinZ/clouded.git
 else
 	echo ci
-	git remote add upstream "https://$GITHUB_TOKEN@github.com/morejust/store.git"
+	git remote add upstream "https://$GITHUB_TOKEN@github.com/ItzAustinZ/clouded.git"
 fi
 
 git fetch upstream
