@@ -15,7 +15,7 @@ const app = express();
 const server = http.createServer(app);
 
 // CONSTANTS
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 8080;
 const publicPath = path.join(__dirname, './client/build');
 const FILES_LIMIT = 5;
 const MAX_FILE_SIZE_MB = parseInt(process.env['MAX_FILE_SIZE_MB']) || 100;
